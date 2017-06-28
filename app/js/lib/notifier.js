@@ -11,9 +11,10 @@
  * una clase de bootstrap para cada tipo de mensaje.
  */
 
-var noty = require("noty");
-var _    = require('underscore');
-
+//var noty = require("noty");
+import noty from "noty"
+//var _    = require('underscore');
+import  _     from 'underscore';
 var that = {};
         
 var _tpl = _.template('<div class="noty_message <%= typeClass %>"><span class="noty_text"></span><div class="noty_close"></div></div>');

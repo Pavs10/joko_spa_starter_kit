@@ -2,7 +2,8 @@
  * 
  * @type Module marionette|Module marionette
  */
-var Marionette = require('marionette');
+//var Marionette = require('marionette');
+import Marionette from 'marionette';
 require('parsleyjs');
 
 // TODO Esto funciona mágicamente y 

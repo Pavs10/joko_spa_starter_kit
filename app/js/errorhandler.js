@@ -2,9 +2,10 @@
  * SODEP S.A. (c) 2015
  * ErrorHandler
  */
-var $ = require("jquery");
-var noty = require("lib/notifier");
-
+//var $ = require("jquery");
+import $ from "jquery";
+//var noty = require("lib/notifier");
+import noty from "lib/notifier";
 /**
  * Modulo encargado de manejar los errores globales de la aplicacion.
  * Actualmente solo maneja los AJAX errors a nivel jQuery

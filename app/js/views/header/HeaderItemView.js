@@ -2,8 +2,10 @@
  * 
  * @type Module marionette|Module marionette
  */
-var Marionette = require('marionette');
-var Templates = require('joko-templates');
+//var Marionette = require('marionette');
+import Marionette from 'marionette';
+//var Templates = require('joko-templates');
+import Templates from 'joko-templates';
 
 var HeaderItemView = Marionette.ItemView.extend({
     templateHelpers: function () {

@@ -6,8 +6,8 @@
  * 
  * @type Backbone.Model
  */
-var Backbone = require('backbone');
-
+//var Backbone = require('backbone');
+import Backbone from 'backbone';
 // TODO Hacer que esto sea global
 // no se si va a ser tan efectivo
 // incluir jquery en todos los archivos

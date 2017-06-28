@@ -1,5 +1,5 @@
-var Marionette = require('marionette');
-
+//var Marionette = require('marionette');
+import Marionette from 'marionette';
 var Router = Marionette.AppRouter.extend({
     appRoutes: {
         'login': 'showLoginView'

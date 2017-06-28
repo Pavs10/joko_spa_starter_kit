@@ -7,7 +7,6 @@ var hbsfy       = require('hbsfy');
 var source      = require('vinyl-source-stream');
 var buffer      = require('vinyl-buffer');
 var paths       = require('./paths');
-var babelgulp 	= require("gulp-babel");
 var babel		= require('babelify');
 
 
@@ -25,7 +24,8 @@ module.exports = function () {
     
     // Definir los transforms aqui va a evitar problemas con los streams.
     // Transformamos los templates .hbs usando hbsfy
-    transform: [hbsfy,babel],
+	// Agregue el parametro Babel para la transformacion
+    transform: [hbsfy],
     
     // Esto es para poder usar require
     // relativo al directorio con los
@@ -57,12 +57,12 @@ module.exports = function () {
            gutil.log('File updated', gutil.colors.yellow(fileName));
         });
     } 
-    return bundler.transform(hbsfy).bundle()
+    return bundler.transform([babel, hbsfy]).bundle()
       .on('error', $.util.log)
       .pipe(source('app.js'))
       .pipe(buffer())
       .pipe($.sourcemaps.init({loadMaps: true}))
-	  .pipe(babelgulp())
+//	  .pipe(babel())
       
         // Add transformation tasks to the pipeline here.
         .on('error', $.util.log)

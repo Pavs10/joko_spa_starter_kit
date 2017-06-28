@@ -3,13 +3,20 @@
  * 
  * @type Marionette Module
  */
-var Backbone          = require('backbone');
-var Marionette        = require("marionette");
-var SessionModel      = require('./models/SessionModel');
-var HeaderItemView    = require('./views/header/HeaderItemView');
-var LoginItemView     = require('./views/login/LoginItemView');
-var HomeLayoutView    = require('./views/HomeLayoutView');   
-var ErrorHandler      = require('./errorhandler');
+//var Backbone          = require('backbone');
+import Backbone from 'backbone';
+//var Marionette        = require("marionette");
+import Marionette from 'marionette';
+//var SessionModel      = require('./models/SessionModel');
+import SessionModel from './models/SessionModel';
+//var HeaderItemView    = require('./views/header/HeaderItemView');
+import HeaderItemView from './views/header/HeaderItemView';
+//var LoginItemView     = require('./views/login/LoginItemView');
+import LoginItemView     from './views/login/LoginItemView';
+//var HomeLayoutView    = require('./views/HomeLayoutView');
+import HomeLayoutView      from './views/HomeLayoutView';   
+//var ErrorHandler      = require('./errorhandler');
+import ErrorHandler      from './errorhandler';
  
 var App = new Marionette.Application();
 

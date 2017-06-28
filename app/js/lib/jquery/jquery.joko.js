@@ -1,5 +1,5 @@
-var $ = require('jquery');
-
+//var $ = require('jquery');
+import $ from 'jquery';
 $.fn.loading = function(flag) {
     var el = $(this);
     var icon = el.parent().find(".joko-loading");
