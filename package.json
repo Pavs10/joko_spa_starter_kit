@@ -19,6 +19,7 @@
     "handlebars": "^4.0.5",
     "hbsfy": "^2.7.0",
     "jsonwebtoken": "^5.7.0",
+    "mocha": "^3.4.2",
     "morgan": "^1.5.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
@@ -40,6 +41,7 @@
   },
   "scripts": {
     "start:mock": "gulp start:mock",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+	"test": "mocha"	
   }
 }
